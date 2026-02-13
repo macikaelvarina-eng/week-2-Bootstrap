@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-6">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabel Bootstrap</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container mt-5">
+    <?php include 'navbar.php'; ?>
+    <?php include 'breadcrumb.php'; ?>
+    <?php include 'pagination.php'; ?>
+    <body style="background-color: #FFC0CB !important;">
+    <div class="container mt-4">
         <h1 class="mb-4">Data Tabel</h1>
 
         <table class="table table-striped table-hover table-bordered">
@@ -24,7 +28,7 @@
                 <tr>
                     <td>1</td>
                     <td>Machika Eina Humaidah</td>
-                    <th>0898765432</th>
+                    <td>0898765432</td>
                     <td>dusun kerajan</td>
                     <td>jalan di depan gang rumah saya rt.006 rw.004 berlubang dan menjadi rawan kecelakaan</td>
                 </tr>
@@ -60,7 +64,7 @@
 </table>
 
 <a href="form.php" class="btn btn-primary mt-3">Input Form</a>
-<a href="belajar.php" class="btn btn-warning mt-3">Kembali ke Halaman Belajar</a>
+<a href="belajar.php" class="btn btn-info mt-3">Kembali ke Halaman Belajar</a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

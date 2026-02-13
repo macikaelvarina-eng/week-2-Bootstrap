@@ -7,12 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <body style="background-color: #FFC0CB !important;">
+        <?php include 'navbar.php'; ?>
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card shadow">
                     <div class="card-header bg-info text-white">
-                        <h3 class="card-title mb-0">Form Input Data Mahasiswa</h3>
+                        <h3 class="card-title mb-0">Form pengaduan suara desa</h3>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="">
@@ -47,7 +49,7 @@
 
 <div class="d-flex gap-2">
     <button type="submit" class="btn btn-info">Simpan Data</button>
-    <button type="reset" class="btn btn-secondary">Reset</button>
+    <button type="reset" class="btn btn-danger">Reset</button>
 </div>
 
 </form>
@@ -64,19 +66,3 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-<?php
-// Cek apakah form sudah disubmit
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nama = $_POST['nama'];
-    $nomortelefon = $_POST['nomortelfon'];
-    $dusun = $_POST['dusun'];
-    $aduan = $_POST['aduan'];
-
-    echo "<h3>pengaduan suara desa</h3>";
-    echo "Nama : $nama <br>";
-    echo "nomortelefon : $nomortelefon <br>";
-    echo "dusun : $dusun <br>";
-    echo "aduan : $aduan <br><hr>";
-}
-?>
